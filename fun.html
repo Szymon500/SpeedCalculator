@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <title>Kalkulator prędkości</title>
+        <link href="fun.css" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;1,300;1,400;1,500;1,600;1,700;1,800&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet"> 
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+        <script src="fun.js" defer></script>
+    </head>
+    <body>
+        <div class="container">
+            <h1>Kalkulator prędkości</h1>
+            <form  method="get" class="container__calculator">
+                <div>
+                <label for="speed" id="speed_label">Podaj prędkość:</label>
+                <input type="text" id="speed" name="speed">
+            </div>
+                <div class="conatiner__calculator--options">
+                <label for="km" id="speed_unit_km">km/h</label>
+                <input type="radio" id="km" name="speed_unit">
+                <label for="ml" id="speed_unit_ml">mp/h</label>
+                <input type="radio" id="ml" name="speed_unit">
+                </div>
+                <div>
+                <input type="submit" value="Oblicz" id="calculate">
+            </div>
+            </form>
+            <div class="container__div">
+                <span class="div__span">1km przejedzisz w:</span>
+                <span id="input__km">0</span>
+                <span class="div__span">sec</span>
+            </div>
+            <div class="container__div">
+                <span class="div__span">100m przejedzisz w:</span>
+                <span id="input__mm">0</span>
+                <span class="div__span">sec</span>
+            </div>
+            <div class="container__div">
+                <span class="div__span">1m przejedzisz w:</span>
+                <span id="input__m">0</span>
+                <span class="div__span">sec</span>
+            </div>
+        </div>
+    </body>
+</html>
